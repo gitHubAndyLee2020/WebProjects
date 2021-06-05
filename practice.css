@@ -1,0 +1,36 @@
+section {
+  width: 100%;
+  height: 92vh;
+  background: linear-gradient(-45deg,purple,blue,turquoise);
+  background-size: 300% 100%;
+  position: absolute;
+  animation: change 10s ease-in-out infinite;
+  margin: none;
+  padding: none;
+  box-sizing: border-box;
+}
+
+@keyframes change {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+#title {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: 'mnicmpSquareRegular';
+  font-size: 80px;
+}
